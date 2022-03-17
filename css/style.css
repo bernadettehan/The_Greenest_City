@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
 
 .hero{
     background: url(../images/background.png) no-repeat center center fixed;
@@ -144,6 +150,11 @@
 
 /* FOOTER*/
 .footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
     background: url(../images/footer_bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -151,4 +162,118 @@
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .footer_logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .footer_logo_container img{
+    height: auto;
+}
+
+.footer_third{
+    width: calc(21.66666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer_right h1{
+    font-family: 'Patua One', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+    margin-right: 267px;
+    margin-bottom: 0px;
+}
+
+.inner_footer_right p{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+    margin-right: 267px;
+    margin-top: 0;
+}
+
+a.bold_inter{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-bottom: 25px;
+}
+
+.footer_third ul{
+    padding-left: 0;
+}
+
+h3.inter_500{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+p.inter_400{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.home_email{
+    width: 523px; 
+    height: 40px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border: 1px solid #FFFFFF; 
+    border-radius: 40px; 
+    background: rgba(252, 218, 135, 0.68); 
+    margin-bottom: 20px;
+}
+
+.home_email::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: left;
+
+    padding-left: 20px;
+    color: #828A70;
+}
+
+.footer-submit{
+    width: 217px;
+    height: 52px;
+}
+
+a.footer_underline_inter{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: #4E5A3F;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    padding-bottom: 40px;
+
 }
