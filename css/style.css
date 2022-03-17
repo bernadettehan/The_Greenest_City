@@ -100,3 +100,55 @@
 .events .row{
     margin-top: 50px;
 }
+
+.main-scroll-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cover{
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child{
+    min-width: 300px;
+    height: 225px;
+    margin: 1px 0px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.child-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER*/
+.footer{
+    background: url(../images/footer_bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
