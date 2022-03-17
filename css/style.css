@@ -344,6 +344,7 @@ section.vol_card {
     perspective: 1000px;
     margin: 1rem;
     background-color: transparent;
+    border: transparent;
   }
 
   /* SET SAME COLUMN AND ROW FOR BOTH CARD */
