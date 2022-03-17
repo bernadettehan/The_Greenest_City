@@ -7,28 +7,172 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Volunteer</title>
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Lato:wght@100&family=Patua+One&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts Links -->
+
   </head>
 
   <body>
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a href=""></a>
-            <ul class="navbar-nav">
-                <li><a href="" class="nav-link">ABOUT</a></li>
-                <li><a href="" class="nav-link">PROGRAMS</a></li>
-                <li><a href="" class="nav-link">CONTACT</a></li>
-                <li><img src="images/logo.png"></li>
-                <li><a href="" class="nav-link">GET INVOLVED</a></li>
-            </ul>
-            <form>
-                <input type="text" placeholder="Search" class="">
-            </form>
+      <div class="hero">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand navbar-dark" style="padding: 20px;">
+            <div class="container-fluid">
+              <a href=""></a>
+              <ul class="navbar-nav align-items-end">
+                  <li><a href="" class="nav-link">ABOUT</a></li>
+                  <li><a href="" class="nav-link">PROGRAMS</a></li>
+                  <li><a href="" class="nav-link">CONTACT</a></li>
+                  <li><img src="images/logo.png"></li>
+                  <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+              </ul>
+              <form>
+                  <input type="text" placeholder="Search" class="search">
+              </form>
+            </div>
+        </nav>
+
+        <!-- Breadcrumbs -->
+        <div>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Get Involved</a>
+            </li>
+            <li>
+              <a href="" class="breadcrumbs__link breadcrumbs__link-active">Volunteer</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header -->
+        <div style="text-align: center;">
+          <h1 class="volunteer_font">Volunteer Opportunities</h1>
+        </div>
+        <div style="margin: 2.5% 5%;">
+          <p class="patua_one_400_white">Here are avariable positions:</p>
+        </div>
+
+        <!-- Cards -->
+        <section class="vol_card">
+          <!-- CARD - 1 -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-front">
+                <img src="images/AdministrationBack.png" />
+              </div>
+              <div class="card-back">
+                <img src="images/Administration.png" />
+              </div>
+            </div>
           </div>
+    
+          <!-- CARD - 2 -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-front">
+                <img src="images/CommunicationsBack.png" />
+              </div>
+              <div class="card-back">
+                <img src="images/Communications.png" />
+              </div>
+            </div>
+          </div>
+          <!-- CARD - 3 -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-front">
+                <img src="images/PhotographyBack.png" />
+              </div>
+              <div class="card-back">
+                <img src="images/Photography.png" />
+              </div>
+            </div>
+          </div>
+          <!-- CARD - 4 -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-front">
+                <img src="images/GardeningBack.png" />
+              </div>
+              <div class="card-back">
+                <img src="images/Gardening.png" />
+              </div>
+            </div>
+          </div>
+          <!-- CARD - 5 -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-front">
+                <img src="images/Good_Food_MarketBack.png" />
+              </div>
+              <div class="card-back">
+                <img src="images/Good_Food_Market.png" />
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
 
-      </nav>
+      <!-- Footer -->
+      <footer class="footer">
+          <div class="inner_footer">
+              <div class="footer_logo_container">
+                <img style="height: 375px;" src="images/footer_img_seed.png" alt="">
+              </div>
 
+              <div class="inner_footer_right">
+                <h1>SUBSCRIBE FOR EVENTS AND UPDATES</h1>
+                <p>Sign up for free to receive updates on events and news about our journey!</p> 
+                <form>
+                    <input type="text" placeholder="Email" class="home_email">
+                    <button class="greenButton" type="button footer-submit" style="margin-bottom: 5px;">Submit</button>
+                </form>
+
+                <div class="footer_third">
+                    <ul>
+                        <li><a class="bold_inter" href="">ABOUT US</a></li>
+                        <li><a class="bold_inter" href="">PROGRAMS</a></li>
+                        <li><a class="bold_inter" href="">CONTACT</a></li>
+                        <li><a class="bold_inter" href="">GET INVOLVED</a></li>
+                    </ul>
+                </div>
+                <div class="footer_third">
+                    <ul>
+                        <li>
+                            <h3 class="inter_500">ADDRESS</h3>
+                            <p class="inter_400">201 COWAN AVENUE<br>TORONTO, ON M6K 2N7</p>
+                        </li>
+                        <li>
+                            <h3 class="inter_500">CALL US</h3>
+                            <p class="inter_400">(647) 438-0038</p>
+                        </li>
+                        <li>
+                            <h3 class="inter_500">EMAIL US</h3>
+                            <p class="inter_400">ADMIN@GREENESTCITY.CA</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_third">
+                    <ul>
+                        <li><a class="footer_underline_inter" href="">Volunteer</a></li>
+                        <li><a class="footer_underline_inter" href="">Donate</a></li>
+                    </ul>
+                </div>
+
+              </div>
+          </div>
+      </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

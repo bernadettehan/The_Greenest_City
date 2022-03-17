@@ -276,3 +276,100 @@ a.footer_underline_inter{
     display: block;
     padding-bottom: 40px;
 }
+
+/* BREADCRUMBS */
+
+.breadcrumbs{
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.breadcrumbs__item{
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after{
+    content: '\203a';
+    margin: 0 3px;
+    color: white;
+}
+
+.breadcrumbs__link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.breadcrumbs__link:hover{
+    text-decoration: underline;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.breadcrumbs__link-active{
+    font-weight: 500;
+
+}
+
+/* VOLUNTEER TITLE */
+.volunteer_font{
+    font-family: 'Patua One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: #E8F3CF;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.patua_one_400_white{
+    font-family: 'Patua One';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+/* VOLUNTEER BODY */
+
+section.vol_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* TAKE OBJECT FAR FROM PERSPECTIVE VIEW */
+  .card {
+    /* background-color: #0000aa; */
+    perspective: 1000px;
+    margin: 1rem;
+    background-color: transparent;
+  }
+
+  /* SET SAME COLUMN AND ROW FOR BOTH CARD */
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    transition: all 0.01s ease;
+
+    transform-style: preserve-3d;
+  }
+  .card-front {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  .card-back {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+  }
+
+  /* FIX CARD IMAGES WIDTH */
+  .card-container img {
+    width: 25rem;
+  }
+
+  .card:hover .card-container {
+    transform: rotateY(180deg);
+  }
